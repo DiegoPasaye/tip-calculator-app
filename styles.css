@@ -1,0 +1,47 @@
+html{
+    background: hsl(185, 41%, 84%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 50vh;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    background: white;
+    border-radius: 20px;
+}
+
+.left{
+    width: 50%;
+    margin-left: 5%;
+}
+.billInput, .peopleInput{
+    width: 80%;
+    background: hsl(189, 41%, 97%);
+    border: none;
+    height: 3vw;
+    border-radius: 5px;
+}
+.tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.tips input{
+    width: 70%;
+    border: none;
+    background: gray;
+    color: black;
+}
+.left button{
+    background: hsl(183, 100%, 15%);
+    width: 70%;
+    height: 3vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5vw;
+}
