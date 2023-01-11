@@ -7,48 +7,50 @@
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>m
-    <h1>SPLITTER</h1>
+<body onload="datos()">
+    <h1>SPLI<br>TTER</h1>
 
     <main>
         <div class="left">
-            <p>Bill</p>
-            <input class="billInput" type="number" placeholder="$">
-            <p>Select tip %</p>
+            <p class="gray">Bill</p>
+            <input class="billInput" type="number" placeholder="0">
+            <p class="gray">Select tip %</p>
 
             <div class="tips">
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <input type="number" placeholder="Custom">
+                <button class="allTips" onclick="tip1()">5%</button>
+                <button class="allTips" onclick="tip2()">10%</button>
+                <button class="allTips" onclick="tip3()">15%</button>
+                <button class="allTips" onclick="tip4()">25%</button>
+                <button class="allTips" onclick="tip5()">50%</button>
+                <input class="customTip" type="number" placeholder="Custom">
             </div>
-            <p>Number of People</p>
+            <p class="gray">Number of People</p>
             <input class="peopleInput" type="number" placeholder="0">
         </div>
 
         <div class="right">
+            <div>
 
-            <div class="first">
-                <div>
-                    <p>Tip Ammount</p>
-                    <span>/person</span>
+                <div class="first">
+                    <div class="firstText">
+                        <p class="textwhite">Tip Ammount</p>
+                        <span class="gray">/person</span>
+                    </div>
+                    
+                    <h2 class="money totalTips">$0.00</h2>
                 </div>
-
-                <h2>$0.00</h2>
+                
+                <div class="second">
+                    <div class="firstText">
+                        <p class="textwhite">Total</p>
+                        <span class="gray">/ person</span>
+                    </div>
+                    
+                    <h2 class="totalPerson">$0.00</h2>
+                </div>
             </div>
 
-            <div class="second">
-                <div>
-                    <p>Total</p>
-                    <span>/ peron</span>
-                </div>
-
-                <h2>$0.00</h2>
-            </div>
-
-            <button>Reset</button>
+            <button class="reset" onclick="reset()">Reset</button>
         </div>
     </main>
 </body>
